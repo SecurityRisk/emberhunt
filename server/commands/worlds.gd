@@ -2,7 +2,7 @@ func worlds(args = [], mainServer = null) -> String:
 	var returnValue = "";
 	if mainServer == null:
 		return "Instance of MainServer.gd is invalid"
-	if args.size() > 0:
+	if args.size() == 0:
 		return str(mainServer.worlds) + "\n"
 	else:
 		for worldArg in args:
